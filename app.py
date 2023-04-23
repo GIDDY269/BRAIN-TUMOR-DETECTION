@@ -56,8 +56,8 @@ if uploader_file is not None:
         predict = model.predict(data_batch)
         pred_label = unique_labels[np.argmax(predict)]
         if pred_label == 0 :
-            st.success('NO TUMOR') 
+            st.success(f'NO TUMOR  ===== {round(np.amax(predict)*100)}%') 
         else:
-            st.success('TUMOR')
+            st.success(f'TUMOR ==== {round(np.amax(predict)*100)}%')
     
 
