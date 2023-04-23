@@ -14,7 +14,7 @@ IMG_SIZE = 224
 BATCH_SIZE = 32
 
 
-import base64
+
 
 def preprocess(image,img_size= IMG_SIZE):
     # decodes images
