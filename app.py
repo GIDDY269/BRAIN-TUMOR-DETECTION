@@ -5,8 +5,6 @@ import tensorflow as tf
 import tensorflow_hub as hub
 import pandas as pd
 import numpy as np
-from PIL import Image
-import io
 
 unique_labels = [0,1]
 
