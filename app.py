@@ -29,7 +29,7 @@ def preprocess(image,img_size= IMG_SIZE):
 hub_layer = hub.KerasLayer("https://tfhub.dev/google/imagenet/mobilenet_v2_130_224/classification/5")
 
 # Register the KerasLayer as a custom object
-model = tf.keras.models.load_model('C:/Users/user/brain_tumor/model/20230421-211629-Brain_tumor_model (1).h5',custom_objects={'KerasLayer': hub_layer})
+model = tf.keras.models.load_model('model/20230421-211629-Brain_tumor_model (1).h5',custom_objects={'KerasLayer': hub_layer})
 
 # creating streamlit app
 
